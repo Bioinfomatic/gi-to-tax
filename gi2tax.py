@@ -457,7 +457,7 @@ def main(
 
             try:
                 with open(gi_taxid_dbs[db] + '.index', 'r') as json_handle:
-                    gi_taxid_index = json.load(json_handle
+                    gi_taxid_index = json.load(json_handle)
             except ValueError:
                 handle.seek(0, 2)
                 handle_size = handle.tell()
